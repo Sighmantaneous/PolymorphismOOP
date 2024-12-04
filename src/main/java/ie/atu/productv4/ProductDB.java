@@ -54,6 +54,22 @@ public class ProductDB {
             mySoftware.setVersion("Oracle 3.0");
             myItem = mySoftware;
         }
+        else if (productCode.equalsIgnoreCase("PINK")) {
+            Music myMusic = new Music();
+            myMusic.setCode(productCode);
+            myMusic.setDescription("Wish you were here by Pink floyd");
+            myMusic.setLabel("Columbia");
+            myMusic.setPrice(08.00);
+            myItem = myMusic;
+        }
+        else if (productCode.equalsIgnoreCase("kdl43")) {
+            TV myTV = new TV();
+            myTV.setCode(productCode);
+            myTV.setDescription("SONY BRAVIA SMART TV KDL43 ");
+            myTV.setScreenSize("55");
+            myTV.setPrice(819.00);
+            myItem = myTV;
+        }
 
         return myItem;
     }
